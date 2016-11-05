@@ -4,7 +4,19 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+        outputPaths: {
+            app: {
+              html: 'index.html',
+              css: {
+                'app': '/assets/css/orglab.css'
+              },
+              js: '/assets/js/orglab.js'
+            },
+            vendor: {
+              css: '/assets/css/vendor.css',
+              js: '/assets/js/vendor.js'
+            }
+        },
   });
 
   // Use `app.import` to add additional libraries to the generated
