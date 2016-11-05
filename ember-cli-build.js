@@ -8,9 +8,9 @@ module.exports = function(defaults) {
             app: {
               html: 'index.html',
               css: {
-                'app': '/assets/css/orglab.css'
+                'app': '/assets/css/assetstest.css'
               },
-              js: '/assets/js/orglab.js'
+              js: '/assets/js/assetstest.js'
             },
             vendor: {
               css: '/assets/css/vendor.css',
